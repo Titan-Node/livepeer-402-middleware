@@ -53,10 +53,12 @@ Creates a new video transcoding job using Livepeer's asset.createViaUrl API.
 
 ## Environment Variables
 
-Create a `.env.local` file with the following variables:
+Create a `.env` file with the following variables:
 
 ```env
-LIVEPEER_API_KEY=your_livepeer_server_api_key
+CDP_API_KEY_ID=       # Get from cdp.coinbase.com
+CDP_API_KEY_SECRET=   # Get from cdp.coinbase.com
+LIVEPEER_API_KEY=     # Get from Livepeer.Studio - Allow CORS access
 ```
 
 **Note**: Use a Server API key (not CORS-enabled) for backend transcoding calls.
